@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/scripts/start.js',
+  entry: './src/scripts/index.js',
   output: {
     filename: 'app.bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -9,7 +9,6 @@ module.exports = {
   devtool: 'source-map',
   module: {
     rules: [
-      { enforce: 'pre', test: /\.js$/, loader: 'eslint-loader' },
       {
         test: /\.js$/,
         exclude: /(node_modules)/,

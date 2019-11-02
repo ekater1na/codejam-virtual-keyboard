@@ -2,14 +2,14 @@
   "name": "codejam-virtual-keyboard",
   "version": "1.0.0",
   "description": "RSS code-jam",
-  "main": "index.js",
+  "main": "./scr/scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development --watch",
     "build": "webpack --mode production",
-    "lint": "eslint ./src/*.js",
-    "lint-fix": "eslint ./src/*.js --fix",
-    "prettier": "prettier --write ./src/*.js"
+    "lint": "eslint ./src/scripts/*.js",
+    "lint-fix": "eslint ./src/scripts/*.js --fix",
+    "prettier": "prettier --write ./src/scripts/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,13 +26,17 @@
   },
   "homepage": "https://github.com/ekater1na/codejam-virtual-keyboard#readme",
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.0.0"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "babel-loader": "^8.0.6",
     "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "prettier": "1.18.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
